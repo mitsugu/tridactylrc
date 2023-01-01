@@ -1,0 +1,38 @@
+# カレントページの title と Url を twitter に投げる
+command sharetwitter js -r js/opentwitterintent.js
+
+# 選択した文字列を Google 翻訳に投げる
+command transel js -r js/translateSelection.js
+
+# カレントページを Google 翻訳に投げる
+command transpage js -r js/translatePage.js
+
+# External editor settings
+set editorcmd gnome-terminal --disable-factory -- vim
+
+# set search engine
+set searchurls.google https://google.com/search?q=%s
+set searchurls.yahoo https://search.yahoo.com/search?p=%s
+set searchurls.bing https://www.bing.com/search?q=%s
+set searchurls.duckduckgo https://duckduckgo.com/?q=%s
+set searchurls.twitter https://twitter.com/search?q=%s
+set searchurls.wikipedia https://ja.wikipedia.org/w/index.php?search=%s
+set searchurls.pixiv https://www.pixiv.net/tags/%s/illustrations?s_mode=s_tag
+set searchurls.youtube https://www.youtube.com/results?search_query=%s
+set searchurls.amazon https://www.amazon.co.jp/s/keywords=%s?s=price-asc-rank&emi=AN1VRQENFRJN5
+set searchurls.github https://github.com/search?utf8=✓&q=%s
+set searchurls.mdn https://developer.mozilla.org/en-US/search?q=%s
+set searchurls.rakuten https://search.rakuten.co.jp/search/mall/%s/?s=2"
+set searchurls.instagram https://www.instagram.com/explore/tags/%s
+set searchurls.flickr https://www.flickr.com/search/?text=%s
+set searchurls.danbooru https://danbooru.donmai.us/posts?tags=%s&ms=1
+set searchurls.pakutaso https://www.pakutaso.com/search.html?offset=0&limit=20&search=%s&imagecolor=
+set searchurls.ebay https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=%s&_sacat=0
+set searchurls.yodobashi https://www.yodobashi.com/?discontinued=false&sorttyp=SELL_PRICE_ASC&word=%s
+set searchurls.mercari https://www.mercari.com/jp/search/?sort_order=price_asc&keyword=%s&category_root=&brand_name=&brand_id=&size_group=&price_min=&price_max=&item_condition_id%5B1%5D=1&shipping_payer_all=1&shipping_payer_id%5B1%5D=1&shipping_payer_id%5B2%5D=1&status_on_sale=1
+set searchurls.googleplay https://play.google.com/store/search?q=%s&hl=ja
+set searchurls.bpixiv https://www.pixiv.net/bookmark.php?tag=%s
+set searchurls.pinterest https://www.pinterest.jp/search/pins/?q=%s
+set searchurls.himaraya https://www.himaraya.co.jp/search?q=%s&path_fs=&sort=Score%2Cnumber9
+set searchurls.irasutoya https://www.irasutoya.com/search?q=%s
+
